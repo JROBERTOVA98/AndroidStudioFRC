@@ -140,8 +140,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/lblDia"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/lblYear" />
+        app:layout_constraintTop_toTopOf="@+id/lblYear"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Spinner
         android:id="@+id/spMes"
@@ -173,15 +175,15 @@
 
     <Spinner
         android:id="@+id/spYear"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
         android:layout_marginTop="55dp"
-        android:layout_marginEnd="24dp"
         android:layout_marginBottom="37dp"
         app:layout_constraintBottom_toTopOf="@+id/btnLimpiar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/spDia"
-        app:layout_constraintTop_toTopOf="@+id/lblYear" />
+        app:layout_constraintTop_toTopOf="@+id/lblYear"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnCalcular"
@@ -208,4 +210,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/spYear"
         app:layout_constraintTop_toBottomOf="@+id/lblApe2" />
+
+    <TextView
+        android:id="@+id/txtRfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="@string/tu_rfc_es"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
