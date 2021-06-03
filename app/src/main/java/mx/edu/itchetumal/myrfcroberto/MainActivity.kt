@@ -51,9 +51,15 @@ class MainActivity : AppCompatActivity() {
             var apellidoP = txtApellidoP.text.toString()
             var apellidoM = txtApellidoM.text.toString()
             var nombre = txtNombre.text.toString()
-            var dia = spDia.toString()
-            var mes = spMes.toString()
-            var anio = spAnio.toString()
+
+            //var dia = spDia.toString()
+            var dia = spDia.selectedItem.toString()
+
+            //var mes = spMes.toString()
+            var mes = spMes.selectedItem.toString()
+
+            //var anio = spAnio.toString()
+            var anio = spAnio.selectedItem.toString()
 
             var aP = apellidoP[0].toString()
             var aM = apellidoM[0].toString() + apellidoM[1].toString()
